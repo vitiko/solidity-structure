@@ -7,15 +7,15 @@ pragma solidity ^0.4.4;
 contract HasFunction {
 
 
-   /**
-   * Get information about something
-   * @param someAddress address of something
-   * @return uri {HttpUri} Uri of something
-   * @return description Some description
-   * @return createdAt {DateTime} create date time of something
-   */
+    /**
+    * Get information about something
+    * @param someAddress address of something
+    * @return uri {HttpUri} Uri of something
+    * @return description Some description
+    * @return createdAt {DateTime} create date time of something
+    */
     function getSomeInfo(address someAddress)
-      constant returns (string uri, string description, uint createdAt) {
+    constant returns (string uri, string description, uint createdAt) {
 
 
         /* code here */
@@ -24,5 +24,9 @@ contract HasFunction {
         uint timestamp = now;
 
         return (myUri, myDescription, timestamp);
+    }
+
+    function isSomethingOk(bytes someStaff) constant returns (bool) {
+        return true;
     }
 }

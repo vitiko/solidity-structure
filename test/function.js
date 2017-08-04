@@ -52,10 +52,35 @@ describe('Test contract with function', function () {
             'createdAt'
           ]
 
+        },
+
+        isSomethingOk: {
+          description: '',
+          name: 'isSomethingOk',
+          params: {
+            someStaff: {
+              name: 'someStaff',
+              type: 'bytes'
+            }
+          },
+          paramsSeq: [
+            'someStaff'
+          ],
+          returns: {
+            param0: {
+              'type': 'bool'
+            }
+          },
+          returnsSeq: [
+            'param0'
+          ],
+          title: 'isSomethingOk',
         }
+
       }
     );
   });
 
 
-});
+})
+;
