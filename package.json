@@ -1,6 +1,6 @@
 {
   "name": "solidity-structure",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "Structure of ethereum contract in solidity language",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "solidity-parser": "^0.2.0",
+    "solidity-parser": "^0.4.0",
     "yargs": "^6.6.0"
   },
   "devDependencies": {
