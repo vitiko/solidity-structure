@@ -1,6 +1,6 @@
 {
   "name": "solidity-structure",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "description": "Structure of ethereum contract in solidity language",
   "main": "index.js",
   "scripts": {

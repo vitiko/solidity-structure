@@ -54,33 +54,71 @@ describe('Test contract with function', function () {
 
         },
 
+
         isSomethingOk: {
+          title: 'Function test is something is ok',
           description: '',
           name: 'isSomethingOk',
           params: {
             someStaff: {
+              description: 'Some argument description',
               name: 'someStaff',
-              type: 'bytes'
+              type: 'bytes',
+              typeHint: null
             }
           },
           paramsSeq: [
             'someStaff'
           ],
           returns: {
-            param0: {
-              'type': 'bool'
+            isOk: {
+              type: 'bool',
+              description: 'Is something is ok',
+              typeHint: null
+            }
+
+          },
+
+          returnsSeq: [
+            'isOk'
+          ],
+
+        },
+
+        noAnnotationInThisFunction: {
+          description: '',
+          name: 'noAnnotationInThisFunction',
+          params: {
+            argA: {
+              name: 'argA',
+              type: 'bytes'
+            },
+            argB: {
+              name: 'argB',
+              type: 'string'
+            }
+          },
+
+          paramsSeq: [
+            'argA',
+            'argB'
+          ],
+          returns: {
+            returnA: {
+              'type': 'address'
+            },
+            returnB: {
+              'type': 'uint'
             }
           },
           returnsSeq: [
-            'param0'
+            'returnA', 'returnB'
           ],
-          title: 'isSomethingOk',
-        }
+          title: 'noAnnotationInThisFunction'
+        },
 
-      }
-    );
+      });
   });
 
 
-})
-;
+});

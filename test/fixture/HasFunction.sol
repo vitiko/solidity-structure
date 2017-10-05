@@ -26,7 +26,17 @@ contract HasFunction {
         return (myUri, myDescription, timestamp);
     }
 
-    function isSomethingOk(bytes someStaff) constant returns (bool) {
+    // Annotation using ///
+
+    /// @dev Function test is something is ok
+    /// @param someStaff Some argument description
+    /// @return isOk Is something is ok
+    function isSomethingOk(bytes someStaff) constant returns (bool isO) {
         return true;
+    }
+
+
+    function noAnnotationInThisFunction (bytes argA, string argB ) constant returns (address returnA, uint returnB) {
+        return (this, 333);
     }
 }
