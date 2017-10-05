@@ -31,7 +31,7 @@ contract HasFunction {
     /// @dev Function test is something is ok
     /// @param someStaff Some argument description
     /// @return isOk Is something is ok
-    function isSomethingOk(bytes someStaff) constant returns (bool isO) {
+    function isSomethingOk(bytes someStaff) constant returns (bool isOk) {
         return true;
     }
 
